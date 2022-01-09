@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-Obermind.Operation-0EFF92C0-7457-4A03-BDD5-B14A5614F8B2</UserSecretsId>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+    <Authors>Obermind.Operation</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Client2\**" />
+    <Compile Remove="Client\**" />
+    <Content Remove="Client2\**" />
+    <Content Remove="Client\**" />
+    <EmbeddedResource Remove="Client2\**" />
+    <EmbeddedResource Remove="Client\**" />
+    <None Remove="Client2\**" />
+    <None Remove="Client\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="AutoQueryable" Version="1.7.0" />
+    <PackageReference Include="AutoQueryable.AspNetCore.Filter" Version="1.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Obermind.Operation.Business.Contract\Obermind.Operation.Business.Contract.csproj" />
+    <ProjectReference Include="..\Obermind.Operation.Business.Manager\Obermind.Operation.Business.Manager.csproj" />
+  </ItemGroup>
+
+</Project>

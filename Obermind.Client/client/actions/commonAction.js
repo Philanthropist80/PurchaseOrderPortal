@@ -1,0 +1,85 @@
+import {
+    ENTITY_FAILURE,
+    ENTITY_CREATE,
+    ENTITY_UPDATE,
+    ENTITY_FETCH,
+    ENTITY_FILTER,
+    ENTITY_DELETE,
+    SELECT_ENTITY_ITEM,
+    CLEAR_ENTITY_LIST,
+    HIDE_ERROR_MESSAGE
+
+} from '../constants/actionType';
+
+export const failure = (error) => {
+    return {
+        type: ENTITY_FAILURE,
+        error: error
+    };
+};
+
+export const add = (entity, data) => {
+    return {
+        type: ENTITY_CREATE,
+        entity: entity,
+        data: data
+    };
+};
+
+export const update = (entity, data) => {
+    return {
+        type: ENTITY_UPDATE,
+        entity: entity,
+        data: data
+    };
+};
+
+export const fetch = (entity, data) => {
+    
+    return {
+        type: ENTITY_FETCH,
+        entity: entity,
+        data: data
+    };
+};
+
+export const filter = (entity, data) => {
+    
+    return {
+        type: ENTITY_FILTER,
+        entity: entity,
+        data: data
+    };
+};
+
+export const destroy = (entity, id) => {
+    return {
+        type: ENTITY_DELETE,
+        entity: entity,
+        id: id
+    };
+};
+
+export const selectItem = (entity, data) => {
+    return {
+        type: SELECT_ENTITY_ITEM,
+        entity: entity,
+        data: data
+    };
+};
+
+export const clearList = (entity) => {
+    return {
+        type: CLEAR_ENTITY_LIST,
+        entity: entity
+    };
+};
+
+export const hideErrorMessage = (entity) => {
+    
+    return {
+        type: HIDE_ERROR_MESSAGE,
+        entity: entity,
+        data: false
+    };
+};

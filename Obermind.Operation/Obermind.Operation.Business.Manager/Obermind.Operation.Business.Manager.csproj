@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Obermind.Operation.API.Common\Obermind.Operation.API.Common.csproj" />
+    <ProjectReference Include="..\Obermind.Operation.Business.Contract\Obermind.Operation.Business.Contract.csproj" />
+    <ProjectReference Include="..\Obermind.Operation.Business.Model\Obermind.Operation.Business.Model.csproj" />
+    <ProjectReference Include="..\Obermind.Operation.Data.Access\Obermind.Operation.Data.Access.csproj" />
+    <ProjectReference Include="..\Obermind.Operation.Security\Obermind.Operation.Security.csproj" />
+  </ItemGroup>
+
+</Project>
